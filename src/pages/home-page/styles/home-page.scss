@@ -14,12 +14,14 @@ body {
 
 .home-page {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     width: $home-page-witdh;
     height: home-page-height;
+    margin-top: 159px;
 
     & &__description {
+        width: $description-width;
+
         & .header {
             height: $description-header-height;
             @include header1;
@@ -27,6 +29,26 @@ body {
         
         & .text {
             height: $description-text-height;
+            @include body1;
+        }
+    }
+
+    & &__tiles {
+        width: calc($tile-width * 2 + 24px);
+        height: calc($tile-height * 2 + 62px);
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        & .tile {
+            width: $tile-width;
+            height: $tile-height;
+            background-color: #272D42;
+            border-radius: $tile-br;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 }
