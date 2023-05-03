@@ -7,8 +7,43 @@
     font-weight: medium;
 }
 
+@mixin header2 {
+    font-size: 32px;
+    line-height: 40;
+    letter-spacing: -0,2%;
+    font-weight: medium;
+}
+
+@mixin header3 {
+    font-size: 20px;
+    line-height: 20;
+    letter-spacing: 0;
+    font-weight: medium;
+}
+
+@mixin body1 {
+    font-size: 16px;
+    line-height: 24;
+    letter-spacing: 0;
+    font-weight: regular;
+}
+
+
+@mixin body1 {
+    font-size: 14px;
+    line-height: 24;
+    letter-spacing: 0;
+    font-weight: regular;
+}
+
+
 
 //var
 
 $home-page-witdh: 1136px;
 $home-page-height: 511px;
+
+$description-width: 467px;
+
+$description-header-height: 112px;
+$description-text-height: 96px;

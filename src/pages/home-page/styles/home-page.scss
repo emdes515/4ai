@@ -1,5 +1,9 @@
 @use './_home-page-var' as *;
 
+@mixin header1 {
+    font-size: 48px;
+}
+
 body {
     background-color: #0F162D;
     display: flex;
@@ -8,7 +12,7 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
-#home-page {
+.home-page {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +20,13 @@ body {
     height: home-page-height;
 
     & &__description {
-        .header {
-            
+        & .header {
+            height: $description-header-height;
+            @include header1;
+        }
+        
+        & .text {
+            height: $description-text-height;
         }
     }
 }
