@@ -1,0 +1,14 @@
+//mixins
+
+@mixin header1 {
+    font-size: 48px;
+    line-height: 56;
+    letter-spacing: -0,2%;
+    font-weight: medium;
+}
+
+
+//var
+
+$home-page-witdh: 1136px;
+$home-page-height: 511px;

@@ -1,2 +1,23 @@
-/// Homepage Styles File
-/// Here we import all the Styles files we need for our Homepage.
+@use './_home-page-var' as *;
+
+body {
+    background-color: #0F162D;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $home-page-witdh;
+    height: home-page-height;
+
+    & &__description {
+        .header {
+            
+        }
+    }
+}
