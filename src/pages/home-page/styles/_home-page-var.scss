@@ -3,14 +3,14 @@
 @mixin header1 {
     font-size: 48px;
     line-height: 56px;
-    letter-spacing: -0,2%;
+    letter-spacing: -0.002em;
     font-weight: 500;
 }
 
 @mixin header2 {
     font-size: 32px;
     line-height: 40px;
-    letter-spacing: -0,2%;
+    letter-spacing: -0.002em;
     font-weight: 500;
 }
 
@@ -29,9 +29,9 @@
 }
 
 
-@mixin body1 {
+@mixin body2 {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 22px;
     letter-spacing: 0;
     font-weight: 400;
 }
@@ -43,11 +43,27 @@ $home-page-height: 511px;
 $home-page-maegin-top: 159px;
 
 $description-width: 467px;
+$description-height: 232px;
 
 $description-header-height: 112px;
+$description-header-margin-bottom: 24px;
 
 $description-text-height: 96px;
 
 $tile-width: 268px;
-$tile-height: 240px;
+$tile-height: 0;
 $tile-br: 24px;
+$tile-margin-bottom: 31px;
+
+$tile-img-width: 64px;
+$tile-img-height: 64px;
+$tile-img-margin-top: 24px;
+
+$tile-title-width: 100%;
+$tile-title-height: 24px;
+$tile-title-margin: 16px 0;
+
+$tile-description-width: 236px;
+$tile-description-height: 0;
+$tile-description-margin-bottom: 24px;
+
