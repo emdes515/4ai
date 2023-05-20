@@ -12,8 +12,8 @@ body {
     display: flex;
     justify-content: space-between;
     width: $home-page-witdh;
-    height: home-page-height;
-    margin-top: 159px;
+    height: $home-page-height;
+    margin-top: $home-page-margin-top;
 
     & &__description {
         width: $description-width;
@@ -48,8 +48,8 @@ body {
             margin-bottom: $tile-margin-bottom;
 
             & .image {
-                margin-top: 24px;
                 & img{
+                    margin-top: $tile-img-margin-top;
                     width: $tile-img-width;
                     height: $tile-img-height;
                 }
@@ -65,13 +65,39 @@ body {
 
             & .description {
                 width: $tile-description-width;
-                min-height: $tile-description-height;
                 margin-bottom: $tile-description-margin-bottom;
                 text-align: center;
                 opacity: 0.5;
                 @include body1;
             }
             
+        }
+    }
+
+    @media  screen and (max-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: $TAB_home-page-margin-top;
+
+        & &__description {
+            width: $TAB_description-width;
+
+             & .header {
+                margin-bottom: $TAB_description-header-margin-bottom;
+             }
+
+             & .text {
+                
+             }
+        }
+
+        & &__tiles {
+            width: calc($TAB_tile-width * 2 + 16px);
+            margin-top: $TAB_tiles-margin-top;
+    
+            & .tile {
+                width: $TAB_tile-width;
+            }
         }
     }
 }
