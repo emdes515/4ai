@@ -85,9 +85,47 @@ body {
              & .header {
                 margin-bottom: $TAB_description-header-margin-bottom;
              }
+        }
 
-             & .text {
-                
+        & &__tiles {
+            width: calc($TAB_tile-width * 2 + 16px);
+            margin-top: $TAB_tiles-margin-top;
+    
+            & .tile {
+                width: $TAB_tile-width;
+                margin-bottom: $TAB_tile-margin-bottom;
+
+                & .image {
+                    & img {
+                        width: $TAB_img-width;
+                        height: $TAB_img-height;
+                    }
+                }
+
+                & .title {
+                    width: $TAB_title-width;
+                    height: $TAB_title-height;
+                }
+
+                .description {
+                    width: $TAB_tile-description-width;
+                    margin-bottom: $TAB_tile-description-margin-bottom;
+                    @include body2;
+                }
+            }
+        }
+    }
+
+    @media  screen and (max-width: 582px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: $TAB_home-page-margin-top;
+
+        & &__description {
+            width: $TAB_description-width;
+
+             & .header {
+                margin-bottom: $TAB_description-header-margin-bottom;
              }
         }
 
@@ -97,6 +135,25 @@ body {
     
             & .tile {
                 width: $TAB_tile-width;
+                margin-bottom: $TAB_tile-margin-bottom;
+
+                & .image {
+                    & img {
+                        width: $TAB_img-width;
+                        height: $TAB_img-height;
+                    }
+                }
+
+                & .title {
+                    width: $TAB_title-width;
+                    height: $TAB_title-height;
+                }
+
+                .description {
+                    width: $TAB_tile-description-width;
+                    margin-bottom: $TAB_tile-description-margin-bottom;
+                    @include body2;
+                }
             }
         }
     }
